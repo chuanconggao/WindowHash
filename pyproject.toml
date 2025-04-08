@@ -12,12 +12,10 @@ readme = "README.md"
 
 [dependency-groups]
 dev = [
-    "pytest>=7.4.3",
     "pytest-cov>=4.1.0",
-    "pytest-asyncio>=0.23.0",
-    "ipykernel>=6.26.0",
     "mypy>=1.7.1",
     "flake8>=6.1.0",
+    "ipython>=8.18.1",
 ]
 
 [tool.coverage.run]
@@ -27,18 +25,6 @@ source = [
 
 [tool.mypy]
 ignore_missing_imports = true
-strict = true
-
-[tool.pylint.format]
-max-line-length = 100
-
-[tool.pylint."messages control"]
-disable = [
-    "C0103",
-    "C0114",
-    "C0115",
-    "C0116",
-]
 
 [tool.pytest.ini_options]
 addopts = "--cov --cov-report xml:cov.xml --cov-report html --cov-report term-missing"
