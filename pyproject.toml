@@ -14,7 +14,6 @@ readme = "README.md"
 dev = [
     "pytest-cov>=4.1.0",
     "mypy>=1.7.1",
-    "flake8>=6.1.0",
     "ipython>=8.18.1",
 ]
 
